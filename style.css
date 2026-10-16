@@ -1,0 +1,28 @@
+:root {
+  --bg: #ffffff;
+  --fg: #1f2328;
+  --muted: #59636e;
+  --line: #d1d9e0;
+  --link: #0969da;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #0d1117; --fg: #e6edf3; --muted: #9198a1; --line: #3d444d; --link: #4493f8; }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font: 16px/1.75 system-ui, -apple-system, "Segoe UI", "Hiragino Sans", "Noto Sans JP", sans-serif;
+}
+main { max-width: 760px; margin: 0 auto; padding: 40px 16px 64px; }
+h1 { font-size: 1.9rem; margin: 0 0 4px; }
+h2 { font-size: 1.2rem; margin: 36px 0 8px; border-bottom: 1px solid var(--line); padding-bottom: 4px; }
+p, li { margin: 6px 0; }
+a { color: var(--link); }
+.lead { color: var(--muted); margin-top: 0; }
+.ja { color: var(--muted); font-size: 0.95em; }
+nav { display: flex; flex-wrap: wrap; gap: 6px 18px; padding: 16px 0; border-top: 1px solid var(--line); margin-top: 48px; font-size: 0.95em; }
+.badge { display: inline-block; margin-top: 8px; }
+.badge img { width: 210px; height: auto; background: #fff; border-radius: 6px; padding: 4px; }
+.meta { color: var(--muted); font-size: 0.9em; }

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kirinuki Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <h1>Kirinuki Planner</h1>
+  <p class="lead">A private planning and analytics tool for clip videos of public live-stream archives.</p>
+
+  <h2>About</h2>
+  <p>Kirinuki Planner is a private command-line tool used only by its developer. It helps plan clip videos
+    ("kirinuki") of the public live-stream archives of one VTuber, Kuzuha (NIJISANJI). The clip videos are made
+    in accordance with the talent agency ANYCOLOR's official fan-content guidelines.</p>
+  <p class="ja">Kirinuki Planner は、開発者本人だけが使う非公開のコマンドラインツールです。にじさんじ所属 VTuber「葛葉」の公開配信アーカイブから切り抜き動画を企画するために使います。切り抜き動画は ANYCOLOR の二次創作ガイドラインに従って制作します。</p>
+
+  <h2>How it uses YouTube API Services</h2>
+  <ul>
+    <li>Lists the public live-stream archives of one channel and their public statistics.</li>
+    <li>Finds third-party clip videos whose descriptions cite those archives.</li>
+    <li>Ranks archives and moments with custom metrics (for example, growth relative to archives of similar age, and how few recent clips exist).
+      These custom metrics are calculated by this tool and are <strong>not provided by YouTube</strong>.</li>
+  </ul>
+  <p>The tool is not published or distributed, has no user accounts, and does not use Google sign-in (OAuth).
+    It does not download, store, or display YouTube audiovisual content through YouTube API Services.</p>
+  <p class="ja">YouTube API サービスでは、対象チャンネルの公開アーカイブと公開統計、それらを引用している他チャンネルの切り抜き動画を取得し、独自の指標でランキングします。独自の指標はこのツールが計算したもので、YouTube が提供するデータではありません。ツールは公開・配布しておらず、ユーザーアカウントや Google ログインもありません。</p>
+
+  <a class="badge" href="https://www.youtube.com/" rel="noopener">
+    <img src="developed-with-youtube.png" alt="Developed with YouTube">
+  </a>
+
+  <h2>Contact</h2>
+  <p><a href="mailto:kuzuha.hakkutsu.kirinuki@gmail.com">kuzuha.hakkutsu.kirinuki@gmail.com</a></p>
+
+  <nav>
+    <a href="privacy.html">Privacy Policy / プライバシーポリシー</a>
+    <a href="terms.html">Terms of Use / 利用規約</a>
+    <a href="https://www.youtube.com/t/terms" rel="noopener">YouTube Terms of Service</a>
+    <a href="http://www.google.com/policies/privacy" rel="noopener">Google Privacy Policy</a>
+  </nav>
+</main>
+</body>
+</html>
